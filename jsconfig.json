@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "target": "es2017",
+    "module": "esnext"
+  },
+  "exclude": ["node_modules", "dist"]
+}

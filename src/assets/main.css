@@ -1,0 +1,138 @@
+@import './base.css';
+
+body {
+  color: #666666;
+  background: #dddddd;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2, 
+h3, 
+h4,
+h5, 
+h6 {
+    color: var(--color-mark-darkgreen)
+}
+
+a {
+    color: #666666;
+    transition: .3s;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: var(--color-mark-green);
+    outline: none;
+    text-decoration: none;
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    background: #ffffff;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    background: var(--color-mark-green);
+    color: var(--color-mark-darkgreen);
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 1;
+    font-size: 22px;
+    right: 15px;
+    bottom: 15px;
+    transition: background 0.5s;
+    z-index: 9;
+}
+
+.back-to-top:hover {
+    color: var(--color-mark-green);
+    background: var(--color-mark-darkgreen);
+}
+
+.back-to-top i {
+    padding-top: 10px;
+}
+
+.btn {
+    transition: .3s;
+}
+
+/* #app {
+  max-width: 1280px; */
+  /* margin: 0 auto; */
+  /* padding: 2rem; */
+  /* font-weight: normal; */
+/* } */
+
+/* a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+} */
+
+/* @media (min-width: 1024px) { */
+
+/* @media (min-width: 1280px) { */
+  /* body {
+    display: flex;
+    place-items: center;
+  } */
+
+  /* #app { */
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    /* padding: 0 2rem; */
+  /* } */
+/* } */
+
+/*******************************/
+/******* Section Header ********/
+/*******************************/
+.section-header {
+  position: relative;
+  width: 100%;
+  margin-bottom: 45px;
+}
+
+.section-header p {
+  color: var(--color-mark-green);
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.section-header h2 {
+  margin: 0;
+  position: relative;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+@media (max-width: 767.98px) {
+  .section-header h2 {
+      font-size: 30px;
+  }
+}
+
+
