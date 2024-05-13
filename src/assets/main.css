@@ -41,7 +41,7 @@ a:focus {
     background: #ffffff;
 }
 
-.back-to-top {
+/* .back-to-top {
     position: fixed;
     display: none;
     background: var(--color-mark-green);
@@ -64,7 +64,7 @@ a:focus {
 
 .back-to-top i {
     padding-top: 10px;
-}
+} */
 
 .btn {
     transition: .3s;
@@ -131,8 +131,10 @@ a:focus {
 
 @media (max-width: 767.98px) {
   .section-header h2 {
-      font-size: 30px;
+    font-size: 30px;
   }
 }
+
+
 
 

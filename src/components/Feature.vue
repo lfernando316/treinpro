@@ -9,10 +9,10 @@
               <i class="flaticon-worker"></i>
             </div>
             <div class="feature-text">
-              <h3>Expert Worker</h3>
+              <h3>Soluciones personalizadas</h3>
               <p>
-                Lorem ipsum dolor sit amet elit. Phasus nec pretim ornare velit
-                non
+                Soluciones a medida, respaldadas por pruebas de laboratorio y
+                análisis integral de productividad.
               </p>
             </div>
           </div>
@@ -20,13 +20,18 @@
         <div class="col-lg-4 col-md-12">
           <div class="feature-item">
             <div class="feature-icon">
-              <i class="flaticon-building"></i>
+              <img
+                src="/public/fluidos.png"
+                alt=""
+                style="height: 70px; z-index: 99"
+              />
+              <!-- <i class="flaticon-building"></i> -->
             </div>
             <div class="feature-text">
-              <h3>Quality Work</h3>
+              <h3>Fluidos especializados</h3>
               <p>
-                Lorem ipsum dolor sit amet elit. Phasus nec pretim ornare velit
-                non
+                Suministramos Fluidos innovadores para yacimientos,
+                biodegradables. Con certificaciones de la OCDE.
               </p>
             </div>
           </div>
@@ -34,13 +39,16 @@
         <div class="col-lg-4 col-md-12">
           <div class="feature-item">
             <div class="feature-icon">
-              <i class="flaticon-call"></i>
+              <img
+                src="/public/rentable.png"
+                alt=""
+                style="height: 70px; z-index: 99"
+              />
             </div>
             <div class="feature-text">
-              <h3>24/7 Support</h3>
+              <h3>Innovación y rentabilidad</h3>
               <p>
-                Lorem ipsum dolor sit amet elit. Phasus nec pretim ornare velit
-                non
+                Innovamos para la máxima rentabilidad en un marco sostenible.
               </p>
             </div>
           </div>
@@ -67,7 +75,7 @@
 }
 
 .feature .feature-item {
-  min-height: 250px;
+  min-height: 270px;
   padding: 30px;
   display: flex;
   align-items: center;

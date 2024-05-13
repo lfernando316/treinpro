@@ -1,6 +1,6 @@
 <template>
   <!-- About Start -->
-  <div class="about wow fadeInUp" data-wow-delay="0.1s">
+  <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-5 col-md-6">
@@ -10,25 +10,29 @@
         </div>
         <div class="col-lg-7 col-md-6">
           <div class="section-header text-left">
-            <p>Welcome to Builderz</p>
-            <h2>25 Years Experience</h2>
+            <p>BIENVENIDOS A TREINPRO</p>
+            <h2>¿QUIÉNES SOMOS?</h2>
           </div>
           <div class="about-text">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-              nec pretium mi. Curabitur facilisis ornare velit non vulputate.
-              Aliquam metus tortor, auctor id gravida condimentum, viverra quis
-              sem.
+              En Treinpro somos un equipo multidisciplinario de innovación
+              tecnológica comprometidos en crear y suministrar soluciones a la
+              medida en la industria de Oil & Gas que buscan mejorar la
+              productividad de pozos productores de hidrocarburos, las
+              condiciones de inyección de pozos y la movilidad de petróleo extra
+              pesado en yacimiento o en superficie, con sistemas de fluidos de
+              estimulación química o mecánica, taponamiento de zonas temporales
+              o definitivas , tratamiento de consolidación química de arena y
+              sistemas de recobro mejorado dentro un marco ambiental de fluidos
+              altamente Biodegradables.
             </p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-              nec pretium mi. Curabitur facilisis ornare velit non vulputate.
-              Aliquam metus tortor, auctor id gravida condimentum, viverra quis
-              sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean
-              consectetur convallis porttitor. Aliquam interdum at lacus non
-              blandit.
+              Respaldados por una amplia trayectoria y un profundo conocimiento
+              del sector, nos dedicamos a desarrollar y ofrecer productos
+              innovadores que satisfagan las necesidades específicas de cada
+              yacimiento.
             </p>
-            <a class="btn" href="">Learn More</a>
+            <a class="btn" href="">CONOCER MÁS SOBRE TREINPRO</a>
           </div>
         </div>
       </div>

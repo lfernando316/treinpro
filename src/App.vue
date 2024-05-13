@@ -1,29 +1,40 @@
 <script setup>
-import About from "./components/About.vue";
-import Feature from "./components/Feature.vue";
-import Carousel from "./components/Carousel.vue";
-import HelloWorld from "./components/HelloWorld.vue";
-import Fact from "./components/Fact.vue";
 import NavBar from "./components/NavBar.vue";
-import TheWelcome from "./components/TheWelcome.vue";
+import Footer from "./components/Footer.vue";
+import { ref, onMounted, onUnmounted } from "vue";
+import { scrollTo } from "vue-scrollto";
+
+const showBackToTop = ref(false);
+
+const scrollToTop = () => {
+  scrollTo("#app", 1500, { easing: "easeInOutExpo" });
+};
+
+const handleScroll = () => {
+  showBackToTop.value = window.scrollY > 0;
+};
+
+// Escucha el evento de scroll cuando el componente está montado
+onMounted(() => {
+  window.addEventListener("scroll", handleScroll);
+});
+
+onUnmounted(() => {
+  window.removeEventListener("scroll", handleScroll);
+});
 </script>
 
 <template>
   <header>
-    <!-- <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" /> -->
     <NavBar />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
   </header>
 
   <main class="wrapper">
-    <Carousel />
-    <Feature />
-    <About />
-    <Fact />
-    <TheWelcome />
+    <router-view />
+    <Footer />
+    <a href="#" v-if="showBackToTop" class="back-to-top" @click="scrollToTop"
+      ><i class="bi bi-chevron-up"
+    /></a>
   </main>
 </template>
 
@@ -37,6 +48,31 @@ header {
   margin: 0 auto 2rem;
 }
 
+.back-to-top {
+  position: fixed;
+  /* display: none; */
+  background: var(--color-mark-green);
+  color: var(--color-mark-darkgreen);
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  line-height: 1;
+  font-size: 22px;
+  right: 15px;
+  bottom: 15px;
+  transition: background 0.5s;
+  z-index: 9;
+  padding: 10px;
+}
+
+.back-to-top:hover {
+  color: var(--color-mark-green);
+  background: var(--color-mark-darkgreen);
+}
+
+.back-to-top i {
+  margin-top: 10px;
+}
 @media (min-width: 1024px) {
   /* header {
     display: flex;

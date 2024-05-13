@@ -1,4 +1,5 @@
 <script>
+import { RouterLink } from "vue-router";
 export default {
   data() {
     return {
@@ -31,15 +32,19 @@ export default {
       <div class="row align-items-center">
         <div class="col-lg-4 col-md-12">
           <div class="logo">
-            <a href="index.html">
-              <h1>Builderz</h1>
-              <!-- <img src="img/logo.jpg" alt="Logo"> -->
-            </a>
+            <router-link to="/">
+              <!-- <h1>Builderz</h1> -->
+              <img
+                src="/public/LOGO_TREINPRO.png"
+                style="height: 275px; width: 450px"
+                alt="Logo"
+              />
+            </router-link>
           </div>
         </div>
         <div class="col-lg-8 col-md-7 d-none d-lg-block">
           <div class="row">
-            <div class="col-4">
+            <!-- <div class="col-4">
               <div class="top-bar-item">
                 <div class="top-bar-icon">
                   <i class="flaticon-calendar"></i>
@@ -49,26 +54,26 @@ export default {
                   <p>Mon - Fri, 8:00 - 9:00</p>
                 </div>
               </div>
-            </div>
-            <div class="col-4">
+            </div> -->
+            <div class="col-6">
               <div class="top-bar-item">
                 <div class="top-bar-icon">
                   <i class="flaticon-call"></i>
                 </div>
                 <div class="top-bar-text">
-                  <h3>Call Us</h3>
-                  <p>+012 345 6789</p>
+                  <h3>Teléfono</h3>
+                  <p>+57 3102760894</p>
                 </div>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-6">
               <div class="top-bar-item">
                 <div class="top-bar-icon">
                   <i class="flaticon-send-mail"></i>
                 </div>
                 <div class="top-bar-text">
-                  <h3>Email Us</h3>
-                  <p>info@example.com</p>
+                  <h3>Escríbenos</h3>
+                  <p>gerencia_comercial@treinpro.com</p>
                 </div>
               </div>
             </div>
@@ -97,10 +102,14 @@ export default {
           id="navbarCollapse"
         >
           <div class="navbar-nav mr-auto">
-            <a href="index.html" class="nav-item nav-link active">Home</a>
-            <a href="about.html" class="nav-item nav-link">About</a>
-            <a href="service.html" class="nav-item nav-link">Service</a>
-            <a href="team.html" class="nav-item nav-link">Team</a>
+            <router-link to="/" class="nav-item nav-link active"
+              >Home</router-link
+            >
+            <a href="#about" class="nav-item nav-link">Quienes somos</a>
+            <router-link to="#servicios" class="nav-item nav-link"
+              >Servicios</router-link
+            >
+            <!-- <a href="team.html" class="nav-item nav-link">Team</a>
             <a href="portfolio.html" class="nav-item nav-link">Project</a>
             <div class="nav-item dropdown">
               <a
@@ -113,12 +122,14 @@ export default {
                 <a href="blog.html" class="dropdown-item">Blog Page</a>
                 <a href="single.html" class="dropdown-item">Single Page</a>
               </div>
-            </div>
-            <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div> -->
+            <router-link to="/contacto" class="nav-item nav-link"
+              >Contacto</router-link
+            >
           </div>
-          <div class="ml-auto">
+          <!-- <div class="ml-auto">
             <a class="btn" href="#">Get A Quote</a>
-          </div>
+          </div> -->
         </div>
       </nav>
     </div>
@@ -137,7 +148,7 @@ export default {
 }
 
 .top-bar .logo {
-  padding: 15px 0;
+  padding: 0px 0;
   text-align: left;
   overflow: hidden;
 }
@@ -152,7 +163,7 @@ export default {
 
 .top-bar .logo img {
   max-width: 100%;
-  max-height: 60px;
+  max-height: 100px;
 }
 
 .top-bar .top-bar-item {
