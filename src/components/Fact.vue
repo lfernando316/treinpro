@@ -30,11 +30,7 @@ export default {
       });
     },
     startCounters() {
-      console.log("inicia");
-
-      // Inicia los contadores
       this.counterInterval = setInterval(() => {
-        // Incrementa los valores gradualmente
         if (this.expertWorkers < 109) {
           this.expertWorkers++;
         }
