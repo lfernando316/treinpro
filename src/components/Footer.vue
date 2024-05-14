@@ -20,19 +20,26 @@
         </div>
         <div class="col-md-6 col-lg-4">
           <div class="footer-link">
-            <h2>Services Areas</h2>
-            <a href="">Building Construction</a>
-            <a href="">House Renovation</a>
-            <a href="">Architecture Design</a>
-            <a href="">Interior Design</a>
-            <a href="">Painting</a>
+            <h2>Servicios</h2>
+            <router-link to="/servicios"
+              >Fluidos de estimulación acida</router-link
+            >
+            <router-link to="/servicios"
+              >Fluidos de mejoramiento de la movilidad de crudos
+              pesados</router-link
+            >
+            <router-link to="/servicios">Fluidos de fractura</router-link>
+            <router-link to="/servicios"
+              >Fluidos para controlar finos en el yacimiento</router-link
+            >
+            <!-- <a href="">Painting</a> -->
           </div>
         </div>
         <div class="col-md-6 col-lg-4">
           <div class="footer-link">
             <h2>Navegación</h2>
-            <router-link to="#about">Quienes somos</router-link>
-            <router-link to="#servicios">Servicios</router-link>
+            <router-link to="/nosotros">Quienes somos</router-link>
+            <router-link to="/servicios">Servicios</router-link>
             <router-link to="/contacto">Contacto</router-link>
             <!-- <a href="">Projects</a>
             <a href="">Testimonial</a> -->

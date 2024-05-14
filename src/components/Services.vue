@@ -5,24 +5,22 @@ const services = [
     image: "/img/service-1.jpg",
     alt: "Image",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
+      "Sistema de estimulación Ácidos  para yacimientos de baja temperatura o alta temperatura , para remover Carbonatos o partículas taponantes de la garganta poral.",
     delay: "0.1s",
   },
   {
-    title:
-      "Fluidos de mejoramiento de la movilidad de crudos pesados ( > 8 ºAPI)",
+    title: "Fluidos de mejoramiento de la movilidad de crudos pesados",
     image: "/img/service-2.jpg",
     alt: "Image",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
-    delay: "0.2s",
+      "Sistema de fluidos base agua , con  extractos de aceites vegetales que mejoran en 90% la movilidad, generando un mejoramiento de º API.",
   },
   {
     title: "Fluidos de fractura",
     image: "/img/service-3.jpg",
     alt: "Image",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
+      "Fluidos  que contienen  mezcla de poliacrilamidas,  que generan viscosidades por debajo de 200 CP, que logran transportar arenas cerámicas 20/40 hasta 8 L/G",
     delay: "0.3s",
   },
   {
@@ -30,7 +28,7 @@ const services = [
     image: "/img/service-4.jpg",
     alt: "Image",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.",
+      "Sistema  que genera un cambio en potencial Z, de las partículas generando atracción en los granos de arena o finos, generando una agrupación de estas partículas sin disminuir la permeabilidad. ",
     delay: "0.4s",
   },
   //   {
@@ -63,7 +61,7 @@ const services = [
         <div
           v-for="(service, index) in services"
           :key="index"
-          class="col-lg-4 col-md-6 wow fadeInUp"
+          class="col-lg-3 col-md-6 wow fadeInUp"
           :data-wow-delay="service.delay"
         >
           <div class="service-item">
@@ -75,7 +73,7 @@ const services = [
             </div>
             <div class="service-text">
               <h3>{{ service.title }}</h3>
-              <a class="btn" :href="service.image" data-lightbox="service">+</a>
+              <!-- <a class="btn" :href="service.image" data-lightbox="service">+</a> -->
             </div>
           </div>
         </div>
@@ -93,7 +91,8 @@ const services = [
 
 .service .service-item {
   position: relative;
-  /* max-width: 450px; */
+  /* max-width: 350px; */
+  /* height: 70%; */
   width: 100%;
   text-align: center;
   margin-bottom: 30px;
@@ -145,7 +144,7 @@ const services = [
 .service .service-text h3 {
   margin: 0;
   padding: 0 10px 0 15px;
-  width: calc(100% - 60px);
+  /* width: calc(100% - 10px); */
   font-size: 15px;
   font-weight: 600;
   color: var(--color-mark-green);

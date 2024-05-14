@@ -2,8 +2,57 @@
 import CountUp from "vue-countup-v2";
 
 export default {
-  components: {
-    CountUp,
+  data() {
+    return {
+      expertWorkers: 0,
+      satisfiedClients: 0,
+      completedProjects: 0,
+      projectsInProgress: 0,
+    };
+  },
+  mounted() {
+    // Inicia los contadores al montar el componente
+    this.initCounters();
+  },
+  methods: {
+    initCounters() {
+      const wowElements = document.querySelectorAll(".wow");
+      wowElements.forEach((element) => {
+        // Verifica si el elemento tiene la clase slideInLeft o slideInRight
+        if (
+          element.classList.contains("slideInLeft") ||
+          element.classList.contains("slideInRight")
+        ) {
+          element.addEventListener("wow", () => {
+            this.startCounters();
+          });
+        }
+      });
+    },
+    startCounters() {
+      console.log("inicia");
+
+      // Inicia los contadores
+      this.counterInterval = setInterval(() => {
+        // Incrementa los valores gradualmente
+        if (this.expertWorkers < 109) {
+          this.expertWorkers++;
+        }
+        if (this.satisfiedClients < 85) {
+          this.satisfiedClients++;
+        }
+        if (this.completedProjects < 89) {
+          this.completedProjects++;
+        }
+        if (this.projectsInProgress < 14) {
+          this.projectsInProgress++;
+        }
+      }, 40); // Cambia el valor según la velocidad deseada
+    },
+    stopCounters() {
+      // Detiene los intervalos al destruir el componente
+      clearInterval(this.counterInterval);
+    },
   },
 };
 </script>
@@ -17,16 +66,9 @@ export default {
               <div class="fact-icon">
                 <i class="flaticon-worker"></i>
               </div>
-              <!-- <div class="fact-text">
-                <count-up
-                  :end="109"
-                  :options="{ duration: 1, suffix: ' Expert Workers' }"
-                />
-              </div> -->
               <div class="fact-text">
-                <h2 data-toggle="counter-up">109</h2>
-
-                <p>Expert Workers</p>
+                <h2>{{ expertWorkers }}</h2>
+                <p>Trabajadores expertos</p>
               </div>
             </div>
             <div class="col-6">
@@ -34,8 +76,8 @@ export default {
                 <i class="flaticon-building"></i>
               </div>
               <div class="fact-text">
-                <h2 data-toggle="counter-up">485</h2>
-                <p>Happy Clients</p>
+                <h2>{{ satisfiedClients }}</h2>
+                <p>Clientes satisfechos</p>
               </div>
             </div>
           </div>
@@ -47,8 +89,8 @@ export default {
                 <i class="flaticon-address"></i>
               </div>
               <div class="fact-text">
-                <h2 data-toggle="counter-up">789</h2>
-                <p>Completed Projects</p>
+                <h2>{{ completedProjects }}</h2>
+                <p>Proyectos completados</p>
               </div>
             </div>
             <div class="col-6">
@@ -56,8 +98,8 @@ export default {
                 <i class="flaticon-crane"></i>
               </div>
               <div class="fact-text">
-                <h2 data-toggle="counter-up">890</h2>
-                <p>Running Projects</p>
+                <h2>{{ projectsInProgress }}</h2>
+                <p>Proyectos en ejecución</p>
               </div>
             </div>
           </div>

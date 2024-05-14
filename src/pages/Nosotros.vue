@@ -32,14 +32,56 @@
               innovadores que satisfagan las necesidades específicas de cada
               yacimiento.
             </p>
-            <router-link class="btn" to="/nosotros"
-              >CONOCER MÁS SOBRE TREINPRO</router-link
-            >
+            <!-- <a class="btn" href="">CONOCER MÁS SOBRE TREINPRO</a> -->
           </div>
         </div>
       </div>
     </div>
   </div>
+  <div></div>
+  <!-- About End -->
+
+  <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7 col-md-6">
+          <div class="section-header text-left">
+            <!-- <p>BIENVENIDOS A TREINPRO</p> -->
+            <h2>MISIÓN</h2>
+          </div>
+          <div class="about-text">
+            <p>
+              En Treinpro, como especialistas apasionados por la optimización de
+              la producción de pozos petroleros, somos el proveedor líder de
+              soluciones químicas biodegradables de última generación que
+              impulsan la industria del Oil & Gas hacia un futuro más verde y
+              eficiente. Respaldados por una amplia trayectoria y un profundo
+              conocimiento del sector, nos dedicamos a desarrollar y ofrecer
+              productos innovadores que satisfagan las necesidades específicas
+              yacimiento.
+            </p>
+            <div class="section-header text-left">
+              <h2>VISIÓN</h2>
+            </div>
+            <p>
+              Empresa con presencia nacional e internacional en suministrar
+              soluciones tecnológicas en fluidos altamente biodegradables que
+              generen mejoramiento de los procesos de producción de la industria
+              de Oil & Gas. Diseñamos soluciones a la medida de acuerdo a las
+              necesidades de cada cliente.
+            </p>
+            <!-- <a class="btn" href="">CONOCER MÁS SOBRE TREINPRO</a> -->
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-6">
+          <div class="about-img">
+            <img src="/img/about.jpg" alt="Image" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div></div>
   <!-- About End -->
 </template>
 

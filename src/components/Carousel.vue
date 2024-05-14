@@ -1,54 +1,64 @@
+<script setup>
+const slides = [
+  {
+    image: "/img/carousel1.jpg",
+    alt: "Carousel Image",
+    caption: "Innovación para la industria del Petróleo y Gas",
+    title: "soluciones a medida para la optimización de la producción.",
+    link: "/servicios",
+  },
+  {
+    image: "/img/carousel2.jpg",
+    alt: "Carousel Image",
+    caption: "Comprometidos con la sostenibilidad",
+    title:
+      "productos biodegradables que potencian la extracción responsable de hidrocarburos.",
+    link: "/servicios",
+  },
+  {
+    image: "/img/carousel-3.jpg",
+    alt: "Carousel Image",
+    caption: "Servicio excepcional y soporte técnico integral",
+    title:
+      "tu aliado estratégico en el camino hacia la eficiencia y la rentabilidad.",
+    link: "/servicios",
+  },
+];
+
+const callToAction = "¡Descubre nuestras soluciones!";
+const carousel = "#carousel";
+</script>
+
 <template>
   <div id="carousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
-      <li data-target="#carousel" data-slide-to="0" class="active"></li>
-      <li data-target="#carousel" data-slide-to="1"></li>
-      <li data-target="#carousel" data-slide-to="2"></li>
+      <li
+        v-for="(slide, index) in slides"
+        :key="index"
+        :data-target="carousel"
+        :data-slide-to="index"
+        :class="{ active: index === 0 }"
+      ></li>
     </ol>
     <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="/img/carousel1.jpg" alt="Carousel_Image" />
+      <div
+        v-for="(slide, index) in slides"
+        :key="index"
+        :class="{ 'carousel-item': true, active: index === 0 }"
+      >
+        <img :src="slide.image" :alt="slide.alt" />
         <div class="carousel-caption">
-          <p class="animated fadeInRight">We Are Professional</p>
-          <h1 class="animated fadeInLeft">For Your Dream Project</h1>
-          <a
-            class="btn animated fadeInUp"
-            href="https://htmlcodex.com/construction-company-website-template"
-            >Get A Quote</a
-          >
-        </div>
-      </div>
-
-      <div class="carousel-item">
-        <img src="/img/carousel2.jpg" alt="Carousel Image" />
-        <div class="carousel-caption">
-          <p class="animated fadeInRight">Professional Builder</p>
-          <h1 class="animated fadeInLeft">We Build Your Home</h1>
-          <a
-            class="btn animated fadeInUp"
-            href="https://htmlcodex.com/construction-company-website-template"
-            >Get A Quote</a
-          >
-        </div>
-      </div>
-
-      <div class="carousel-item">
-        <img src="/img/carousel-3.jpg" alt="Carousel Image" />
-        <div class="carousel-caption">
-          <p class="animated fadeInRight">We Are Trusted</p>
-          <h1 class="animated fadeInLeft">For Your Dream Home</h1>
-          <a
-            class="btn animated fadeInUp"
-            href="https://htmlcodex.com/construction-company-website-template"
-            >Get A Quote</a
-          >
+          <p class="animated fadeInRight">{{ slide.caption }}</p>
+          <h1 class="animated fadeInLeft">{{ slide.title }}</h1>
+          <router-link class="btn animated fadeInUp" :to="slide.link">{{
+            callToAction
+          }}</router-link>
         </div>
       </div>
     </div>
-
     <a
       class="carousel-control-prev"
-      href="#carousel"
+      :href="carousel"
       role="button"
       data-slide="prev"
     >
@@ -57,7 +67,7 @@
     </a>
     <a
       class="carousel-control-next"
-      href="#carousel"
+      :href="carousel"
       role="button"
       data-slide="next"
     >
@@ -65,7 +75,6 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-  <!-- Carousel End -->
 </template>
 
 <style>
@@ -127,7 +136,7 @@
 
 .carousel .carousel-caption h1 {
   color: #ffffff;
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 700;
   margin-bottom: 35px;
 }

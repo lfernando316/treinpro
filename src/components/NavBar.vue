@@ -4,6 +4,7 @@ export default {
   data() {
     return {
       isSticky: false,
+      isMenuOpen: false,
     };
   },
   mounted() {
@@ -21,6 +22,11 @@ export default {
         this.isSticky = false;
         // Aquí puedes ajustar los estilos de otros elementos si es necesario
       }
+    },
+    toggleMenu() {
+      setTimeout(() => {
+        this.isMenuOpen = !this.isMenuOpen;
+      }, 100);
     },
   },
 };
@@ -93,20 +99,34 @@ export default {
           class="navbar-toggler"
           data-toggle="collapse"
           data-target="#navbarCollapse"
+          @click="toggleMenu"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div
+          :class="{ show: isMenuOpen }"
           class="collapse navbar-collapse justify-content-between"
           id="navbarCollapse"
         >
           <div class="navbar-nav mr-auto">
-            <router-link to="/" class="nav-item nav-link active"
-              >Home</router-link
+            <router-link
+              to="/"
+              class="nav-item nav-link active"
+              @click="toggleMenu"
             >
-            <a href="#about" class="nav-item nav-link">Quienes somos</a>
-            <router-link to="#servicios" class="nav-item nav-link"
+              Home</router-link
+            >
+            <router-link
+              to="/nosotros"
+              class="nav-item nav-link"
+              @click="toggleMenu"
+              >Quienes somos</router-link
+            >
+            <router-link
+              to="/servicios"
+              class="nav-item nav-link"
+              @click="toggleMenu"
               >Servicios</router-link
             >
             <!-- <a href="team.html" class="nav-item nav-link">Team</a>
@@ -123,13 +143,18 @@ export default {
                 <a href="single.html" class="dropdown-item">Single Page</a>
               </div>
             </div> -->
-            <router-link to="/contacto" class="nav-item nav-link"
+            <router-link
+              to="/contacto"
+              class="nav-item nav-link"
+              @click="toggleMenu"
               >Contacto</router-link
             >
           </div>
-          <!-- <div class="ml-auto">
-            <a class="btn" href="#">Get A Quote</a>
-          </div> -->
+          <div class="ml-auto">
+            <router-link class="btn" to="/contacto"
+              >Realiza una cotización</router-link
+            >
+          </div>
         </div>
       </nav>
     </div>
@@ -144,7 +169,7 @@ export default {
 .top-bar {
   position: relative;
   height: 90px;
-  background: var(--color-mark-green);
+  background: #ffffff;
 }
 
 .top-bar .logo {
@@ -220,7 +245,7 @@ export default {
 /**********************************/
 .nav-bar {
   position: relative;
-  background: var(--color-mark-green);
+  background: #ffffff;
   transition: 0.3s;
 }
 
