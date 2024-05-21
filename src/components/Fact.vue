@@ -21,7 +21,8 @@ export default {
         // Verifica si el elemento tiene la clase slideInLeft o slideInRight
         if (
           element.classList.contains("slideInLeft") ||
-          element.classList.contains("slideInRight")
+          element.classList.contains("slideInRight") ||
+          window.innerWidth <= 568
         ) {
           element.addEventListener("wow", () => {
             this.startCounters();
@@ -169,5 +170,12 @@ export default {
 
 .fact .fact-left h2 {
   color: #8fc050;
+}
+
+@media (max-width: 768px) {
+  .fact .fact-text p {
+    font-size: 12px;
+    font-weight: 600;
+  }
 }
 </style>
