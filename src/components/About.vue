@@ -5,7 +5,7 @@
       <div class="row align-items-center">
         <div class="col-lg-5 col-md-6">
           <div class="about-img">
-            <img src="/img/about.jpg" alt="Image" />
+            <img src="/img/industria_llama.webp" alt="Image" />
           </div>
         </div>
         <div class="col-lg-7 col-md-6">
@@ -62,6 +62,7 @@
 .about .about-img img {
   width: 100%;
   height: 100%;
+  max-height: 520px;
   object-fit: cover;
 }
 

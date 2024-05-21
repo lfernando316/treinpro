@@ -2,7 +2,7 @@
 const services = [
   {
     title: "Fluidos de estimulación Acida",
-    image: "/img/service-1.jpg",
+    image: "/img/industria_campo.webp",
     alt: "Image",
     description:
       "Sistema de estimulación Ácidos  para yacimientos de baja temperatura o alta temperatura , para remover Carbonatos o partículas taponantes de la garganta poral.",
@@ -10,14 +10,14 @@ const services = [
   },
   {
     title: "Fluidos de mejoramiento de la movilidad de crudos pesados",
-    image: "/img/service-2.jpg",
+    image: "/img/industria_tubos.webp",
     alt: "Image",
     description:
       "Sistema de fluidos base agua , con  extractos de aceites vegetales que mejoran en 90% la movilidad, generando un mejoramiento de º API.",
   },
   {
     title: "Fluidos de fractura",
-    image: "/img/service-3.jpg",
+    image: "/img/botellas_laboratorio.webp",
     alt: "Image",
     description:
       "Fluidos  que contienen  mezcla de poliacrilamidas,  que generan viscosidades por debajo de 200 CP, que logran transportar arenas cerámicas 20/40 hasta 8 L/G",
@@ -25,7 +25,7 @@ const services = [
   },
   {
     title: "Fluidos para controlar finos en el yacimiento",
-    image: "/img/service-4.jpg",
+    image: "/img/oil.webp",
     alt: "Image",
     description:
       "Sistema  que genera un cambio en potencial Z, de las partículas generando atracción en los granos de arena o finos, generando una agrupación de estas partículas sin disminuir la permeabilidad. ",

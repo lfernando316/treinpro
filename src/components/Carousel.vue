@@ -1,26 +1,26 @@
 <script setup>
 const slides = [
   {
-    image: "/img/carousel1.jpg",
+    image: "/img/hombre_trabajando.webp",
     alt: "Carousel Image",
     caption: "Innovación para la industria del Petróleo y Gas",
-    title: "soluciones a medida para la optimización de la producción.",
+    title: "Soluciones a medida para la optimización de la producción.",
     link: "/servicios",
   },
   {
-    image: "/img/carousel2.jpg",
+    image: "/img/mujer_ciencia.webp",
     alt: "Carousel Image",
     caption: "Comprometidos con la sostenibilidad",
     title:
-      "productos biodegradables que potencian la extracción responsable de hidrocarburos.",
+      "Productos biodegradables que potencian la extracción responsable de hidrocarburos.",
     link: "/servicios",
   },
   {
-    image: "/img/carousel-3.jpg",
+    image: "/img/hombre_tomando_nota.webp",
     alt: "Carousel Image",
     caption: "Servicio excepcional y soporte técnico integral",
     title:
-      "tu aliado estratégico en el camino hacia la eficiencia y la rentabilidad.",
+      "Tu aliado estratégico en el camino hacia la eficiencia y la rentabilidad.",
     link: "/servicios",
   },
 ];
