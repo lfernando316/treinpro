@@ -21,8 +21,7 @@ export default {
         // Verifica si el elemento tiene la clase slideInLeft o slideInRight
         if (
           element.classList.contains("slideInLeft") ||
-          element.classList.contains("slideInRight") ||
-          window.innerWidth <= 568
+          element.classList.contains("slideInRight")
         ) {
           element.addEventListener("wow", () => {
             this.startCounters();

@@ -61,7 +61,7 @@ export default {
                 </div>
               </div>
             </div> -->
-            <div class="col-6">
+            <!-- <div class="col-6">
               <div class="top-bar-item">
                 <div class="top-bar-icon">
                   <i class="flaticon-call"></i>
@@ -82,7 +82,7 @@ export default {
                   <p>gerencia_comercial@treinpro.com</p>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -150,11 +150,11 @@ export default {
               >Contacto</router-link
             >
           </div>
-          <div class="ml-auto">
+          <!-- <div class="ml-auto">
             <router-link class="btn" to="/contacto"
               >Realiza una cotización</router-link
             >
-          </div>
+          </div> -->
         </div>
       </nav>
     </div>

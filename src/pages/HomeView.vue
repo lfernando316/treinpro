@@ -9,6 +9,6 @@ import Services from "../components/Services.vue";
   <Carousel />
   <Feature />
   <About />
-  <Fact />
+  <!-- <Fact /> -->
   <Services />
 </template>

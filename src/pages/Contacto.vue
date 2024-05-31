@@ -56,14 +56,14 @@ async function handleSubmit() {
               <i class="flaticon-call"></i>
               <div class="contact-text">
                 <h2>Teléfono</h2>
-                <p>+57 3102760894</p>
+                <p>+57 3175014658</p>
               </div>
             </div>
             <div class="contact-item">
               <i class="flaticon-send-mail"></i>
               <div class="contact-text">
                 <h2>Correo</h2>
-                <p>gerencia_comercial@treinpro.com</p>
+                <p>gerenciadministrativa@treinpro.com</p>
               </div>
             </div>
           </div>

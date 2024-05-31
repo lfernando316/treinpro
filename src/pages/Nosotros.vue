@@ -5,7 +5,7 @@
       <div class="row align-items-center">
         <div class="col-lg-5 col-md-6">
           <div class="about-img">
-            <img src="/img/industria_llama.webp" alt="Image" />
+            <img src="/img/mujer_treinpro2.webp" alt="Image" />
           </div>
         </div>
         <div class="col-lg-7 col-md-6">
@@ -75,7 +75,7 @@
         </div>
         <div class="col-lg-5 col-md-6">
           <div class="about-img">
-            <img src="/img/equipo_personas.webp" alt="Image" />
+            <img src="/img/maquina.webp" alt="Image" />
           </div>
         </div>
       </div>

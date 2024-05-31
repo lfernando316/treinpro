@@ -2,7 +2,7 @@
 const services = [
   {
     title: "Fluidos de estimulación Acida",
-    image: "/img/industria_campo.webp",
+    image: "/img/laboratorio_planta.webp",
     alt: "Image",
     description:
       "Sistema de estimulación Ácidos  para yacimientos de baja temperatura o alta temperatura , para remover Carbonatos o partículas taponantes de la garganta poral.",
@@ -10,14 +10,14 @@ const services = [
   },
   {
     title: "Fluidos de mejoramiento de la movilidad de crudos pesados",
-    image: "/img/industria_tubos.webp",
+    image: "/img/guantes.webp",
     alt: "Image",
     description:
       "Sistema de fluidos base agua , con  extractos de aceites vegetales que mejoran en 90% la movilidad, generando un mejoramiento de º API.",
   },
   {
     title: "Fluidos de fractura",
-    image: "/img/botellas_laboratorio.webp",
+    image: "/img/probeta.webp",
     alt: "Image",
     description:
       "Fluidos  que contienen  mezcla de poliacrilamidas,  que generan viscosidades por debajo de 200 CP, que logran transportar arenas cerámicas 20/40 hasta 8 L/G",
@@ -25,7 +25,7 @@ const services = [
   },
   {
     title: "Fluidos para controlar finos en el yacimiento",
-    image: "/img/oil.webp",
+    image: "/img/laboratorio.webp",
     alt: "Image",
     description:
       "Sistema  que genera un cambio en potencial Z, de las partículas generando atracción en los granos de arena o finos, generando una agrupación de estas partículas sin disminuir la permeabilidad. ",
@@ -136,22 +136,22 @@ const services = [
   align-items: center;
   height: 60px;
   background: var(--color-mark-darkgreen);
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+  /* overflow: hidden; */
+  /* white-space: nowrap; */
+  /* text-overflow: ellipsis; */
 }
 
 .service .service-text h3 {
   margin: 0;
   padding: 0 10px 0 15px;
   /* width: calc(100% - 10px); */
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
   color: var(--color-mark-green);
   text-align: left;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+  /* overflow: hidden; */
+  /* white-space: nowrap; */
+  /* text-overflow: ellipsis; */
 }
 
 .service .service-item a.btn {

@@ -7,14 +7,18 @@
           <div class="footer-contact">
             <h2>Contacto</h2>
             <p><i class="bi bi-geo-alt-fill" /> Bogotá, Colombia</p>
-            <p><i class="bi bi-telephone-fill" /> +57 3102760894</p>
-            <p><i class="fa fa-envelope" /> gerencia_comercial@treinpro.com</p>
+            <p><i class="bi bi-telephone-fill" /> +57 3175014658</p>
+            <p>
+              <i class="fa fa-envelope" /> gerenciadministrativa@treinpro.com
+            </p>
             <div class="footer-social">
               <!-- <a href=""><i class="fab fa-twitter"></i></a> -->
-              <a href=""><i class="fab fa-facebook-f"></i></a>
-              <a href=""><i class="fab fa-youtube"></i></a>
-              <a href=""><i class="fab fa-instagram"></i></a>
-              <a href=""><i class="fab fa-linkedin-in"></i></a>
+              <!-- <a href="" class="mx-1"><i class="fab fa-facebook-f"></i></a> -->
+              <!-- <a href="" class="mx-1"><i class="fab fa-youtube"></i></a> -->
+              <a href="" class="mx-1"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://wa.me/573175014658" target="_blank" class="mx-1"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -75,7 +79,7 @@
           <p>&copy; <a href="#">TREINPRO</a>, DERECHOS RESERVADOS.</p>
         </div>
         <div class="col-md-6">
-          <p>Designed By <a href="">lfernando316</a></p>
+          <!-- <p>Designed By <a href="">lfernando316</a></p> -->
         </div>
       </div>
     </div>
