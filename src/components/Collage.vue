@@ -37,7 +37,13 @@ img {
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
+  }
+}
+@media (max-width: 468px) {
+  .container {
+    flex-direction: column;
+    margin-bottom: 0px;
   }
 }
 </style>
