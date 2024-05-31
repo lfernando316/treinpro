@@ -63,7 +63,7 @@ async function handleSubmit() {
               <i class="flaticon-send-mail"></i>
               <div class="contact-text">
                 <h2>Correo</h2>
-                <p>gerenciadministrativa@treinpro.com</p>
+                <p class="size_correo">gerenciadministrativa@treinpro.com</p>
               </div>
             </div>
           </div>
@@ -255,5 +255,21 @@ async function handleSubmit() {
 
 .control-group {
   margin-bottom: 17px;
+}
+
+@media (max-width: 991px) {
+  .size_correo {
+    font-size: 12px !important;
+  }
+}
+@media (max-width: 768px) {
+  .size_correo {
+    font-size: 14px !important;
+  }
+}
+@media (max-width: 431px) {
+  .size_correo {
+    font-size: 10px !important;
+  }
 }
 </style>
