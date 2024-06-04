@@ -77,7 +77,12 @@ const services = [
               class="service-text d-flex justify-content-between align-items-center"
             >
               <h3>{{ service.title }}</h3>
-              <a class="btn" :href="service.rute" data-lightbox="service">+</a>
+              <router-link
+                class="btn"
+                :to="service.rute"
+                data-lightbox="service"
+                >+</router-link
+              >
             </div>
           </div>
         </div>
