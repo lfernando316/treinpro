@@ -1,7 +1,7 @@
 <script setup>
 const slides = [
   {
-    image: "/img/hombre_trabajando.webp",
+    image: "/img/maquinas_noche.webp",
     alt: "Carousel Image",
     caption: "Innovación para la industria del Petróleo y Gas",
     title: "Soluciones a medida para la optimización de la producción.",

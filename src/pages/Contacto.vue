@@ -9,7 +9,7 @@ const formData = ref({
   mensaje: "",
 });
 
-const formAction = "https://formsubmit.co/luiz_fernando316@hotmail.com";
+const formAction = "https://formsubmit.co/gerenciadministrativa@treinpro.com";
 
 async function handleSubmit() {
   try {

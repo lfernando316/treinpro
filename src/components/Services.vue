@@ -7,6 +7,7 @@ const services = [
     description:
       "Sistema de estimulación Ácidos  para yacimientos de baja temperatura o alta temperatura , para remover Carbonatos o partículas taponantes de la garganta poral.",
     delay: "0.1s",
+    rute: "servicios/fluidos-estimulacion",
   },
   {
     title: "Fluidos de mejoramiento de la movilidad de crudos pesados",
@@ -14,6 +15,7 @@ const services = [
     alt: "Image",
     description:
       "Sistema de fluidos base agua , con  extractos de aceites vegetales que mejoran en 90% la movilidad, generando un mejoramiento de º API.",
+    rute: "/servicios/fluidos-de-mejoramiento",
   },
   {
     title: "Fluidos de fractura",
@@ -71,9 +73,11 @@ const services = [
                 <p>{{ service.description }}</p>
               </div>
             </div>
-            <div class="service-text">
+            <div
+              class="service-text d-flex justify-content-between align-items-center"
+            >
               <h3>{{ service.title }}</h3>
-              <!-- <a class="btn" :href="service.image" data-lightbox="service">+</a> -->
+              <a class="btn" :href="service.rute" data-lightbox="service">+</a>
             </div>
           </div>
         </div>

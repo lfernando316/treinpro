@@ -4,6 +4,8 @@ import HomeView from "@/pages/HomeView.vue";
 import Contacto from "@/pages/Contacto.vue";
 import Nosotros from "@/pages/Nosotros.vue";
 import Servicios from "@/pages/Servicios.vue";
+import ServicioUno from "@/pages/servicios/ServicioUno.vue";
+import ServicioDos from "@/pages/servicios/ServicioDos.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -27,6 +29,16 @@ const router = createRouter({
       path: "/contacto",
       name: "contacto",
       component: Contacto,
+    },
+    {
+      path: "/servicios/fluidos-estimulacion",
+      name: "servicioUno",
+      component: ServicioUno,
+    },
+    {
+      path: "/servicios/fluidos-de-mejoramiento",
+      name: "ServicioDos",
+      component: ServicioDos,
     },
     // Agrega más rutas según sea necesario
   ],

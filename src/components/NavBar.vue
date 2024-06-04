@@ -123,12 +123,38 @@ export default {
               @click="toggleMenu"
               >Quienes somos</router-link
             >
-            <router-link
-              to="/servicios"
-              class="nav-item nav-link"
-              @click="toggleMenu"
-              >Servicios</router-link
-            >
+            <div class="nav-item dropdown">
+              <router-link
+                to="/servicios"
+                class="nav-link dropdown-toggle"
+                @click="toggleMenu"
+                data-toggle="dropdown"
+                >Servicios</router-link
+              >
+              <div class="dropdown-menu">
+                <router-link
+                  to="/servicios/fluidos-estimulacion"
+                  class="dropdown-item"
+                  >Fluidos de Estimulación Acida</router-link
+                >
+                <router-link
+                  to="/servicios/fluidos-de-mejoramiento"
+                  class="dropdown-item"
+                  >Fluidos de mejoramiento de la movilidad de crudos
+                  pesados</router-link
+                >
+                <router-link
+                  to="/servicios/servicio-fluidos-estimulacion"
+                  class="dropdown-item"
+                  >Fluidos de fractura</router-link
+                >
+                <router-link
+                  to="/servicios/servicio-fluidos-estimulacion"
+                  class="dropdown-item"
+                  >Fluidos para controlar finos en el yacimiento</router-link
+                >
+              </div>
+            </div>
             <!-- <a href="team.html" class="nav-item nav-link">Team</a>
             <a href="portfolio.html" class="nav-item nav-link">Project</a>
             <div class="nav-item dropdown">
