@@ -24,6 +24,7 @@ const services = [
     description:
       "Fluidos  que contienen  mezcla de poliacrilamidas,  que generan viscosidades por debajo de 200 CP, que logran transportar arenas cerámicas 20/40 hasta 8 L/G",
     delay: "0.3s",
+    rute: "/servicios/fluidos-de-fractura",
   },
   {
     title: "Fluidos para controlar finos en el yacimiento",
@@ -32,6 +33,7 @@ const services = [
     description:
       "Sistema  que genera un cambio en potencial Z, de las partículas generando atracción en los granos de arena o finos, generando una agrupación de estas partículas sin disminuir la permeabilidad. ",
     delay: "0.4s",
+    rute: "/servicios/fluidos-yacimiento",
   },
   //   {
   //     title: "Fixing & Support",
@@ -164,7 +166,7 @@ const services = [
 }
 
 .service .service-item a.btn {
-  width: 60px;
+  min-width: 50px;
   height: 60px;
   padding: 3px 0 0 3px;
   display: flex;

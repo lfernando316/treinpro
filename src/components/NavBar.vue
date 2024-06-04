@@ -146,13 +146,13 @@ export default {
                   pesados</router-link
                 >
                 <router-link
-                  to="/servicios/servicio-fluidos-estimulacion"
+                  to="/servicios/fluidos-de-fractura"
                   class="dropdown-item"
                   @click="toggleMenu"
                   >Fluidos de fractura</router-link
                 >
                 <router-link
-                  to="/servicios/servicio-fluidos-estimulacion"
+                  to="/servicios/fluidos-yacimiento"
                   class="dropdown-item"
                   @click="toggleMenu"
                   >Fluidos para controlar finos en el yacimiento</router-link

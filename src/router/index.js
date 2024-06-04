@@ -6,6 +6,8 @@ import Nosotros from "@/pages/Nosotros.vue";
 import Servicios from "@/pages/Servicios.vue";
 import ServicioUno from "@/pages/servicios/ServicioUno.vue";
 import ServicioDos from "@/pages/servicios/ServicioDos.vue";
+import ServicioTres from "@/pages/servicios/ServicioTres.vue";
+import ServicioCuatro from "@/pages/servicios/ServicioCuatro.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -39,6 +41,16 @@ const router = createRouter({
       path: "/servicios/fluidos-de-mejoramiento",
       name: "ServicioDos",
       component: ServicioDos,
+    },
+    {
+      path: "/servicios/fluidos-de-fractura",
+      name: "ServicioTres",
+      component: ServicioTres,
+    },
+    {
+      path: "/servicios/fluidos-yacimiento",
+      name: "ServicioCuatro",
+      component: ServicioCuatro,
     },
     // Agrega más rutas según sea necesario
   ],
