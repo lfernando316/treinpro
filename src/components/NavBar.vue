@@ -127,30 +127,34 @@ export default {
               <router-link
                 to="/servicios"
                 class="nav-link dropdown-toggle"
-                @click="toggleMenu"
                 data-toggle="dropdown"
                 >Servicios</router-link
               >
+              <!-- @click="toggleMenu" -->
               <div class="dropdown-menu">
                 <router-link
                   to="/servicios/fluidos-estimulacion"
                   class="dropdown-item"
+                  @click="toggleMenu"
                   >Fluidos de Estimulación Acida</router-link
                 >
                 <router-link
                   to="/servicios/fluidos-de-mejoramiento"
                   class="dropdown-item"
+                  @click="toggleMenu"
                   >Fluidos de mejoramiento de la movilidad de crudos
                   pesados</router-link
                 >
                 <router-link
                   to="/servicios/servicio-fluidos-estimulacion"
                   class="dropdown-item"
+                  @click="toggleMenu"
                   >Fluidos de fractura</router-link
                 >
                 <router-link
                   to="/servicios/servicio-fluidos-estimulacion"
                   class="dropdown-item"
+                  @click="toggleMenu"
                   >Fluidos para controlar finos en el yacimiento</router-link
                 >
               </div>
