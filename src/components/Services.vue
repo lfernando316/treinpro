@@ -19,7 +19,7 @@ const services = [
   },
   {
     title: "Fluidos de fractura",
-    image: "/img/probeta.webp",
+    image: "/img/servicio_fluidos.webp",
     alt: "Image",
     description:
       "Fluidos  que contienen  mezcla de poliacrilamidas,  que generan viscosidades por debajo de 200 CP, que logran transportar arenas cerámicas 20/40 hasta 8 L/G",
@@ -28,7 +28,7 @@ const services = [
   },
   {
     title: "Fluidos para controlar finos en el yacimiento",
-    image: "/img/laboratorio.webp",
+    image: "/img/probeta.webp",
     alt: "Image",
     description:
       "Sistema  que genera un cambio en potencial Z, de las partículas generando atracción en los granos de arena o finos, generando una agrupación de estas partículas sin disminuir la permeabilidad. ",
@@ -102,7 +102,7 @@ const services = [
 
 .service .service-item {
   position: relative;
-  /* max-width: 350px; */
+  /* max-width: 400px; */
   /* height: 70%; */
   width: 100%;
   text-align: center;
@@ -116,6 +116,8 @@ const services = [
 
 .service .service-img img {
   width: 100%;
+  /* max-height: 450px; */
+  /* max-width: 400px; */
 }
 
 .service .service-overlay {
