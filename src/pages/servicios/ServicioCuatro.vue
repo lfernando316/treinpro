@@ -5,7 +5,7 @@
       <div class="row align-items-center">
         <div class="col-lg-5 col-md-6">
           <div class="about-img2">
-            <img src="/img/laboratorio.webp" alt="Image" />
+            <img src="/img/probeta.webp" alt="Image" />
           </div>
         </div>
         <div class="col-lg-7 col-md-6">

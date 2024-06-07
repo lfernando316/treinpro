@@ -116,8 +116,8 @@ const services = [
 
 .service .service-img img {
   width: 100%;
-  /* max-height: 450px; */
-  /* max-width: 400px; */
+  max-height: 450px;
+  max-width: 400px;
 }
 
 .service .service-overlay {
